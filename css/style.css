@@ -251,42 +251,12 @@ body {
 
 /* ---------- Projetos cards ----------*/
 
-.card {
-  width: 220px;
-  height: 290px;
-  background: linear-gradient(
-    180deg,
-    rgba(198, 17, 17, 1) 0%,
-    rgba(174, 21, 21, 1) 35%,
-    rgba(77, 9, 9, 1) 70%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  border-radius: 28px;
-  border: none;
-}
-
-.slide-content {
-  margin: 0 40px;
-}
-
-.image-content,
-.card-content {
-  padding: 10px 14px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title {
-  font-size: 1.25rem;
-  color: var(--snow);
-}
-
 .button a {
   color: var(--snow);
 }
 
 .button {
+  position: relative;
   width: 120px;
   height: 30px;
   border-radius: 30px;
@@ -297,6 +267,71 @@ body {
   transition: all 0.3s ease;
 }
 
+.btn-text {
+  z-index: 2;
+}
+
+.img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+#img-btn-github {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+#img-btn-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
 .button:hover {
   background: #840303;
+}
+#cat-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+#img-cat {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  width: 180px;
+  margin: auto;
+}
+
+.dados {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer p {
+  font-size: 0.875rem;
+  color: var(--snow);
+  text-align: center;
+}
+
+#p-2 {
+  margin-top: 10px;
+  font-size: 0.75rem;
+}
+
+footer {
+  padding-bottom: 30px;
+  background-color: var(--black);
 }
