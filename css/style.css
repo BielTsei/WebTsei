@@ -248,3 +248,55 @@ body {
 .imgs-techs img {
   width: 40px;
 }
+
+/* ---------- Projetos cards ----------*/
+
+.card {
+  width: 220px;
+  height: 290px;
+  background: linear-gradient(
+    180deg,
+    rgba(198, 17, 17, 1) 0%,
+    rgba(174, 21, 21, 1) 35%,
+    rgba(77, 9, 9, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border-radius: 28px;
+  border: none;
+}
+
+.slide-content {
+  margin: 0 40px;
+}
+
+.image-content,
+.card-content {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--snow);
+}
+
+.button a {
+  color: var(--snow);
+}
+
+.button {
+  width: 120px;
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: var(--red);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #840303;
+}
