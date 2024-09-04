@@ -3,6 +3,7 @@
   --black: #000000;
   --night: #141414;
   --snow: #faf2f0;
+  --swiper-theme-color: #aa0000;
 }
 
 * {
@@ -22,6 +23,13 @@
   font-style: normal;
 }
 
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0px 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -30,7 +38,7 @@
 }
 
 .card-list .card-item .card-link {
-  width: 400px;
+  width: 280px;
   display: block;
   padding: 18px;
   border-radius: 28px;
@@ -46,6 +54,10 @@
   transition: 0.2s ease;
 }
 
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
 .card-list .card-link .card-image {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -58,6 +70,7 @@
   font-family: "OCR A Extended";
   color: var(--snow);
   text-align: center;
+  margin-bottom: 25px;
 }
 
 #card-button {
@@ -70,4 +83,27 @@
   margin: 30px 0 5px;
   cursor: pointer;
   font-size: 14px;
+  transition: 0.4s ease;
+}
+
+#card-button:hover {
+  background-color: var(--snow);
+}
+.fa-brands:hover {
+  background-color: var(--red);
+}
+
+.card-wrapper .swiper-slide-button {
+  color: var(--snow);
+  margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
 }
