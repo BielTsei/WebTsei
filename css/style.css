@@ -310,6 +310,8 @@ body {
   margin: auto;
 }
 
+/* --------- Footer ----------*/
+
 .dados {
   padding-left: 50px;
   padding-right: 50px;
@@ -334,4 +336,24 @@ footer p {
 footer {
   padding-bottom: 30px;
   background-color: var(--black);
+}
+
+.container-form {
+  background-color: var(--red);
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 30px 50px;
+  margin-top: 40px;
+}
+
+.container-form h1 {
+  text-align: center;
+}
+
+.container-form form {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
 }

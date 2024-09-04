@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>WebTsei</title>
@@ -28,9 +27,9 @@
           <span id="hamburguer"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="/">Sobre mim</a></li>
-          <li><a href="/">Projetos</a></li>
-          <li><a href="/">Contato</a></li>
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="index-projects.html">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -65,7 +64,7 @@
         </div>
       </section>
       <span class="diamond-line"></span>
-      <section class="about-container">
+      <section class="about-container" id="sobre-mim">
         <h1>Sobre mim</h1>
         <p>
           Olá! Meu nome é Gabriel Tsei e tenho 20 anos. Atualmente, estou
@@ -103,6 +102,59 @@
           <a href="index-projects.html">Projetos</a>
         </button>
       </div>
+      <span class="diamond-line"></span>
+      <section id="contato" class="container-form">
+        <div>
+          <h1>Contato</h1>
+          <div>
+            <form
+              action="https://formsubmit.co/554c5cf2626844cf3f789c6b265d3023"
+              method="POST"
+            >
+              <label for="name">Nome:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Seu nome"
+              />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu melhor email"
+                required
+              />
+              <label for="telefone">Telefone:</label>
+              <input
+                type="text"
+                name="telefone"
+                id="telefone"
+                placeholder="Seu número de whatsapp"
+                required
+              />
+              <label for="mensagem">Mensagem:</label>
+              <textarea
+                placeholder="Deixe sua mensagem"
+                name="mensagem"
+                id="mensagem"
+                required
+                rows="8"
+              ></textarea>
+
+              <button id="btn-submit" type="submit">Enviar</button>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://entre-em-contato-formulario.netlify.app/thanks.html"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
