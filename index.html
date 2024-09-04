@@ -35,10 +35,12 @@
     </header>
     <main>
       <section class="main-container">
-        <div class="textos">
-          <p>Olá! Eu sou</p>
-          <h1>Gabriel Tsei</h1>
-          <p>Desenvolvedor Front-End</p>
+        <div id="container-main-textos-img">
+          <div class="textos">
+            <p>Olá! Eu sou</p>
+            <h1>Gabriel Tsei</h1>
+            <p>Desenvolvedor Front-End</p>
+          </div>
           <div class="imagem">
             <img
               id="img-perfil"
@@ -66,33 +68,39 @@
       <span class="diamond-line"></span>
       <section class="about-container" id="sobre-mim">
         <h1>Sobre mim</h1>
-        <p>
-          Olá! Meu nome é Gabriel Tsei e tenho 20 anos. Atualmente, estou
-          cursando Análise e Desenvolvimento de Sistemas no terceiro semestre.
-          Desde sempre, sou apaixonado por design e pela arte de criar sites que
-          unem funcionalidade e estética. Acredito que a web é um espaço
-          incrível para expressar ideias e conectar pessoas, e estou sempre em
-          busca de aprender mais sobre as últimas tendências e tecnologias.
-        </p>
-        <p>
-          Seja bem-vindo ao meu portfólio! Aqui você encontrará um pouco do meu
-          trabalho e da minha jornada como aspirante a desenvolvedor web. Vamos
-          construir coisas incríveis juntos!
-        </p>
-        <div class="imgs-techs">
-          <img
-            src="/assets/imgs/html.png"
-            alt="Logo da linguagem de marcação HTML"
-          />
-          <img
-            src="/assets/imgs/css.png"
-            alt="Logo da linguagem de estilização CSS"
-          />
-          <img
-            src="/assets/imgs/js.png"
-            alt="Logo da linguagem de programação JavaScript"
-          />
-          <img src="/assets/imgs/figma.png" alt="Logo do sofware Figma" />
+        <div class="container-about-me">
+          <div class="about-container-textos">
+            <p>
+              Olá! Meu nome é Gabriel Tsei e tenho 20 anos. Atualmente, estou
+              cursando Análise e Desenvolvimento de Sistemas no terceiro
+              semestre. Desde sempre, sou apaixonado por design e pela arte de
+              criar sites que unem funcionalidade e estética. Acredito que a web
+              é um espaço incrível para expressar ideias e conectar pessoas, e
+              estou sempre em busca de aprender mais sobre as últimas tendências
+              e tecnologias.
+            </p>
+            <p>
+              Seja bem-vindo ao meu portfólio! Aqui você encontrará um pouco do
+              meu trabalho e da minha jornada como aspirante a desenvolvedor
+              web. Vamos construir coisas incríveis juntos!
+            </p>
+          </div>
+
+          <div class="imgs-techs">
+            <img
+              src="/assets/imgs/html.png"
+              alt="Logo da linguagem de marcação HTML"
+            />
+            <img
+              src="/assets/imgs/css.png"
+              alt="Logo da linguagem de estilização CSS"
+            />
+            <img
+              src="/assets/imgs/js.png"
+              alt="Logo da linguagem de programação JavaScript"
+            />
+            <img src="/assets/imgs/figma.png" alt="Logo do sofware Figma" />
+          </div>
         </div>
       </section>
       <span class="diamond-line"></span>
@@ -119,6 +127,7 @@
                 required
                 placeholder="Seu nome"
               />
+
               <label for="email">Email:</label>
               <input
                 type="email"
@@ -127,6 +136,7 @@
                 placeholder="Seu melhor email"
                 required
               />
+
               <label for="telefone">Telefone:</label>
               <input
                 type="text"
@@ -135,6 +145,16 @@
                 placeholder="Seu número de whatsapp"
                 required
               />
+
+              <label for="assunto">Assunto:</label>
+              <input
+                type="text"
+                name="assunto"
+                id="assunto"
+                placeholder="Assunto"
+                required
+              />
+
               <label for="mensagem">Mensagem:</label>
               <textarea
                 placeholder="Deixe sua mensagem"

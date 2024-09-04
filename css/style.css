@@ -135,6 +135,12 @@ body {
   width: 170px;
   margin-top: 30px;
   margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  animation: img-ani 2s ease 0s 1 normal forwards;
+}
+
+#img-perfil:hover {
+  width: 180px;
 }
 
 .imagem {
@@ -154,7 +160,7 @@ body {
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: clear;
+  justify-content: center;
   flex-direction: column;
   gap: 30px;
 }
@@ -259,12 +265,13 @@ body {
   position: relative;
   width: 120px;
   height: 30px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: none;
   font-size: 1rem;
   background-color: var(--red);
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 3px 3px 6px #ec1212;
 }
 
 .btn-text {
@@ -397,4 +404,186 @@ footer {
 #btn-submit:hover {
   background-color: var(--snow);
   color: var(--black);
+}
+
+#container-tks {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tks {
+  color: var(--snow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tks h1 {
+  padding-bottom: 20px;
+}
+
+.tks h3 {
+  padding-bottom: 18px;
+}
+
+.home {
+  width: 180px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--red);
+}
+
+.home a {
+  color: var(--snow);
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  #container-main-textos-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main-container p {
+    font-size: 1.4rem;
+  }
+
+  .main-container h1 {
+    font-size: 2.5rem;
+  }
+
+  #img-perfil {
+    width: 340px;
+  }
+
+  #img-perfil:hover {
+    width: 350px;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .btn-main {
+    width: 200px;
+    height: 44px;
+  }
+
+  .btn-main a {
+    font-size: 1.03rem;
+  }
+  .about-container h1 {
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+  }
+
+  .about-container {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .about-container-textos {
+    width: 380px;
+    font-size: 1.1rem;
+  }
+
+  .imgs-techs img {
+    width: 70px;
+  }
+
+  .imgs-techs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .button {
+    width: 180px;
+    height: 38px;
+    font-size: 1.05rem;
+  }
+
+  /* ----------- Formulário --------- */
+
+  .container-form {
+    height: 660px;
+    display: flex;
+  }
+  .form input {
+    width: 300px;
+  }
+  .container-form h1 {
+    font-size: 1.9rem;
+  }
+
+  .form textarea {
+    width: 300px;
+  }
+
+  #btn-submit {
+    width: 120px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+@keyframes img-ani {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateY(-65px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateY(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateY(0);
+  }
 }
