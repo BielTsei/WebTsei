@@ -73,7 +73,7 @@
   padding: 15px 5px 15px 5px;
   border-radius: 8px;
   color: var(--snow);
-  background-color: rgba(250, 242, 240, 0.2);
+  background-color: rgba(250, 242, 240, 0.12);
   border: 1px solid rgba(250, 242, 240, 0.5);
   backdrop-filter: blur(4px);
 }
