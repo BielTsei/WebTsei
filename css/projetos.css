@@ -45,6 +45,7 @@
 .btns-links {
   width: 200px;
   display: flex;
+  margin-top: 15px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
@@ -60,9 +61,9 @@
   padding: 2px; */
   transition: 0.5s ease;
 }
-.card-list .card-item .card-image:hover {
+/* .card-list .card-item .card-image:hover {
   width: calc(70% + 20px);
-}
+} */
 .card-list .card-item {
   display: flex;
   align-items: center;
@@ -88,6 +89,8 @@
 }
 #card-button:hover {
   background-color: var(--snow);
+  width: calc(35px + 10px);
+  height: calc(35px + 10px);
 }
 .slider-wrapper .swiper-pagination-bullet {
   height: 15px;
